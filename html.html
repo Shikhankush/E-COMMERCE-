@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="input-container">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required />
+            </div>
+            <div class="input-container">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required />
+            </div>
+            <button type="submit" id="loginButton">Login</button>
+            <p id="errorMessage" style="color: red; display: none;">Invalid username or password!</p>
+        </form>
+    </div>
+
+    <div id="userBlock" class="user-block" style="display: none;">
+        <h3>Welcome, <span id="userNameDisplay"></span>!</h3>
+        <p>This is your personal block of informat
+            <p>This is your personal block of information.</p>
+            <button onclick="logout()">Logout</button>
+        </div>
+    
+        <script src="javascript.js"></script>
+    </body>
+    </html>
